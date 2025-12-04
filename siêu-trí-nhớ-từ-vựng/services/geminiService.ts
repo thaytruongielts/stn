@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { VocabularyWord } from "../types";
 
-const apiKey = process.env.API_KEY || '';
+const apiKey = process.env.GEMINI_API_KEY || '';
 const ai = new GoogleGenAI({ apiKey });
 
 export const generateMnemonicStory = async (words: VocabularyWord[]): Promise<string> => {
